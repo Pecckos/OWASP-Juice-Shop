@@ -1,0 +1,26 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop:v19.1.1
+    container_name: juice-shop
+    environment:
+      - NODE_ENV=unsafe
+    ports:
+      - "3000:3000"
+    networks:
+      - juice-net
+
+  tools:
+    build: .
+    container_name: jessica-tools
+    stdin_open: true
+    tty: true
+    depends_on:
+      - juice-shop
+    ports:
+      - "9999:9999"
+    networks:
+      - juice-net
+
+networks:
+  juice-net:
+    driver: bridge
