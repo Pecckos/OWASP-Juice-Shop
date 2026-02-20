@@ -137,18 +137,18 @@ docker exec -it → opens an interactive shell inside the tools container
 # 🐳 Useful Docker Commands
 
 List running containers:
-
+```
 docker ps
-
+```
 Stop environment:
-
+```
 docker compose down
-
+```
 Full clean rebuild:
-
+```
 docker compose down --rmi all
 docker compose up --build -d
-
+```
 ---
 # 🔐 Security Model
 
