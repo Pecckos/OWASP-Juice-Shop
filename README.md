@@ -1,12 +1,12 @@
-🛡 OWASP Juice Shop – Security Testing Lab
-Dockerized Pentesting Environment
+## 🛡 OWASP Juice Shop – Security Testing Lab
+
 ---
 
 
 ## 🔎 Overview
 
 This repository contains a **Docker-based pentesting lab** used to assess OWASP Juice Shop in a controlled setup.  
-The lab is designed to be **reproducible**, **isolated**, and safe for educational security testing.
+The lab is designed to be **isolated**, and safe for educational security testing.
 
 **Vulnerabilities tested:**
 - Stored XSS (cookie exfiltration proof)
